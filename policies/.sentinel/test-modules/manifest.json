@@ -1,0 +1,16 @@
+{
+	"records": [
+		{
+			"key": "test\\restrict-vm-size\\pass\\tfplan-functions",
+			"source": "../../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "C:/Users/ps107/OneDrive - Capgemini/Documents/test-sentinel/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test\\restrict-vm-size\\fail\\tfplan-functions",
+			"source": "../../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "C:/Users/ps107/OneDrive - Capgemini/Documents/test-sentinel/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		}
+	]
+}
