@@ -54,7 +54,7 @@ resource "azurerm_windows_virtual_machine" "win" {
   name                = "win-machine"
   resource_group_name = azurerm_resource_group.RG.name
   location            = azurerm_resource_group.RG.location
-  size                = ""
+  size                = "D2s_v3"
   admin_username      = "adminuser"
   admin_password      = "P@$$w0rd1234!"
   #computer_name       = "test-win"
@@ -79,7 +79,7 @@ resource "azurerm_linux_virtual_machine" "lin" {
   name              		  = "lin-machine"
   resource_group_name		  = azurerm_resource_group.RG.name
   location         	      = azurerm_resource_group.RG.location
-  size               		  = ""
+  size               		  = "D2s_v3"
   admin_username     	          = "adminuser"
   disable_password_authentication = false
   admin_password                  = "P@$$w0rd1234!" 
