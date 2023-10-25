@@ -1,3 +1,23 @@
+terraform {
+
+  cloud {
+    organization = "example-sentinel"
+
+    workspaces {
+      name = "learn-terraform-sentinel"
+    }
+  }
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "3.54.0"
+    }
+  }
+}
+
+  provider "azurerm" {
+  features {}
+}
 resource "azurerm_virtual_machine_scale_set_extension" "tlz_extension_linux" {
  
     name                         = "updatinghostname"
