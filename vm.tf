@@ -1,4 +1,4 @@
-terraform {
+/*terraform {
 
   cloud {
     organization = "example-sentinel"
@@ -100,3 +100,4 @@ resource "azurerm_linux_virtual_machine" "lin" {
     version   = "latest"
   }
 }
+*/
