@@ -27,9 +27,9 @@ resource "azurerm_virtual_machine_scale_set_extension" "tlz_extension_linux" {
     type_handler_version         =  "1.10"
     protected_settings  =  jsonencode({ 
     
-    fileUris = ["https://github.com/pallavis3/sentinel/blob/792db2a1aa2839017f8e498606a559c87bad9b34/powershell-win2019.zip"],
+    #fileUris = ["https://github.com/pallavis3/sentinel/blob/792db2a1aa2839017f8e498606a559c87bad9b34/powershell-win2019.zip"],
    # commandToExecute = "powershell -NoProfile -windowstyle hidden -ExecutionPolicy Unrestricted -Command \"Invoke-WebRequest -Uri \"www.google.com\" -UseBasicParsing | Out-File -FilePath C:\\ansible.txt;.\\win-host.ps1 Pallavi ${data.azurerm_subscription.current.subscription_id} CentralUS VMSS  1 FScode vmsshost typevmss dev prod ${var.fapp_key}\"",
-   commandToExecute = "powershell -NoProfile -windowstyle hidden -ExecutionPolicy Unrestricted -Command \".\\win-2019\\oktaasa-jfrog.ps1\""
+   commandToExecute = "powershell -NoProfile -windowstyle hidden -ExecutionPolicy Unrestricted -Command \"Expand-Archive -Path powershell-win2019.zip -DestinationPath C:\ ""
     managedIdentity = {}
     })
  #depends_on = [ azurerm_role_assignment.saroleforvmss ]
